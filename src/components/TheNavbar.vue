@@ -1,12 +1,9 @@
 <template>
   <nav class="nav">
     <ul class="nav-link-list">
-      <li class="nav-link-list--item">
-        <router-link to="/">Home</router-link>
-      </li>
-      <li class="nav-link-list--item">
-        <router-link to="/code">QR Code Component</router-link>
-      </li>
+      <li class="nav-link-list--item"><router-link to="/">Home</router-link></li>
+      <li class="nav-link-list--item"><router-link to="/code">QR Code Component</router-link> </li>
+      <li class="nav-link-list--item"><router-link to="/nft">NFT Component</router-link></li>
     </ul>
   </nav>
 </template>
