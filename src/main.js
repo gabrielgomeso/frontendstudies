@@ -6,10 +6,10 @@ import QrCode from '../src/pages/QrCode.vue'
 
 
 const router = createRouter({
-  history: createWebHistory(),
   routes: [
     { path: '/', name: 'Home', component: HelloWorld },
-    { path: '/code', name: 'QrCode', component: QrCode }
+    { path: '/code', name: 'QrCode', component: QrCode },
+    { path: '/:pathMatch(.*)*', component: HelloWorld }
   ]
 })
 
