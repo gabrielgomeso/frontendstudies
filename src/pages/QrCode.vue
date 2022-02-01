@@ -33,7 +33,7 @@ export default {};
   background-color: hsl(212, 45%, 89%);
 
   width: 100vw;
-  height: calc(100vh - 18px);
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;

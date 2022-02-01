@@ -51,7 +51,7 @@
   color: hsl(0, 0%, 100%);
   width: 100vw;
   
-  height: calc(100vh - 18px);
+  height: 100vh;
 
   background-color: hsl(217, 54%, 11%);
 
@@ -101,11 +101,11 @@
       }
 
       &--description {
-        font-size: 18px;
+        font-size: 17px;
         color: hsl(215, 51%, 70%);
         font-weight: 300;
 
-        padding: 0px 0px 20px 0px;
+        padding: 10px 0px 20px 0px;
       }
     }
 
@@ -121,13 +121,21 @@
 
       border-bottom: 1px solid hsl(215, 32%, 27%);
 
+      &--value, 
+      &--remaining-date {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+      }
+
       &--value {
         font-weight: 600; 
       }
 
       &--remaining-date {
         font-weight: 400;
-        color: hsl(215, 51%, 70%);
+        color: hsl(215, 51%, 70%); 
       }
     }
 
