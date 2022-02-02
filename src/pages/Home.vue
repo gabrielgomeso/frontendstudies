@@ -3,12 +3,19 @@
     <h1 class="page-title">Projetos de Estudo Frontend</h1>
 
     <section class="projects">
-        <TheProjectCard></TheProjectCard>
-        <TheProjectCard></TheProjectCard>
-        <TheProjectCard></TheProjectCard>
-        <TheProjectCard></TheProjectCard>
-        <TheProjectCard></TheProjectCard>
-        <TheProjectCard></TheProjectCard>
+        <router-link to="/code">
+          <TheProjectCard
+            projectName='QR Code Card'
+            projectDescription='A simple card to display a QR Code'
+          ></TheProjectCard>
+        </router-link>
+
+        <router-link to="/nft">
+          <TheProjectCard
+            projectName='NFT Card'
+            projectDescription='A simple card to display a NFT info'
+          ></TheProjectCard>
+        </router-link>
     </section>
   </section>
 
@@ -19,7 +26,7 @@
   export default {
     components: {
       TheProjectCard
-    }
+    },
   }
 </script>
 
@@ -29,11 +36,14 @@
   align-items: center;
   flex-direction: column;
 
+  padding: 25px;
+
   min-height: 100vh;
   max-width: 100vw;
 
   .page-title{
     padding: 20px;
+    text-align: center;
   }
   .projects{ 
     max-width: 80vw;
@@ -46,6 +56,17 @@
     gap: 10px;
     width: 100%;
 
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  @media (max-width: 800px) {
+    .projects{
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 </style>

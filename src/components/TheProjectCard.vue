@@ -1,27 +1,38 @@
 <template>
   <div class="card">
-    <figure>
+    <!-- <figure>
       <img
         class="card-image"
-        src="../assets/image-qr-code.png"
+        src="../assets/{{ }}"
         alt="QR Code to Frontend Mentor"
       />
-    </figure>
+    </figure> -->
+
     <h1 class="card-title">
-      Improve your front-end skills by building projects
+      {{ projectName }}
     </h1>
     <p class="card-description">
-      Scan the QR code to visit Frontend Mentor and take your coding skills to
-      the next level
+      {{ projectDescription }}
     </p>
   </div>
 </template>
 
-<script></script>
+<script>
+  export default {
+    props: {
+      projectName: String,
+      projectDescription: String
+    }
+  }
+</script>
 
 <style lang="scss" scoped>
 .card {
-  max-width: 320px;
+  min-width: 150px;
+  min-height: 150px;
+
+  width: 300px;
+  height: 300px;
   padding: 1.25rem;
 
   background-color: hsl(0, 0%, 100%);
